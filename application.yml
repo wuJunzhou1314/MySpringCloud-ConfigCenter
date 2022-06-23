@@ -8,12 +8,14 @@ spring:
   config: 
     active: 
       on-profile: dev
-  name: sc-config-dev
+  application: 
+    name: sc-config-dev
 ---
 #声明是生产环境
 spring: 
   config: 
     active: 
       on-profile: prod
-  name: prod
+  application: 
+    name: prod
 #以UTF-8格式保存文件
