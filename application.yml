@@ -1,7 +1,7 @@
 #指定使用哪个环境
-spring: 
-  profiles: 
-    active: dev
+# spring: 
+#   profiles: 
+#     active: dev
 ---
 #声明是开发环境
 spring: 
@@ -17,5 +17,5 @@ spring:
     active: 
       on-profile: prod
   application: 
-    name: prod
+    name: sc-config-prod
 #以UTF-8格式保存文件
