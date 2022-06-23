@@ -1,21 +1,24 @@
 #指定使用哪个环境
-# spring: 
-#   profiles: 
-#     active: dev
+spring: 
+  profiles: 
+    active: dev
 ---
 #声明是开发环境
+# spring: 
+#   config: 
+#     active: 
+#       on-profile: dev
 spring: 
-  config: 
-    active: 
-      on-profile: dev
+  profiles: dev
   application: 
-    name: sc-config-dev
+    name: sc-configcenter-dev
 ---
 #声明是生产环境
-spring: 
-  config: 
-    active: 
-      on-profile: prod
+# spring: 
+#   config: 
+#     active: 
+#       on-profile: prod
+spring:
+  profiles: prod
   application: 
-    name: sc-config-prod
-#以UTF-8格式保存文件
+    name: sc-configcenter-prod
